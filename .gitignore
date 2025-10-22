@@ -29,6 +29,7 @@ wheels/
 
 # Data files (too large for GitHub)
 data/*.csv
+models
 
 # macOS
 .DS_Store
