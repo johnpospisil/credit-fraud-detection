@@ -1,0 +1,67 @@
+{
+  "model_type": "RandomForestClassifier",
+  "training_date": "2025-10-22 11:01:38",
+  "dataset": {
+    "source": "ULB Machine Learning Group / Worldline",
+    "time_period": "September 2013 (48 hours)",
+    "total_transactions": 283726,
+    "fraud_rate": 0.1727485630620034,
+    "train_size": 198608,
+    "test_size": 85118
+  },
+  "model_params": {
+    "n_estimators": 100,
+    "max_depth": 20,
+    "min_samples_split": 10,
+    "min_samples_leaf": 4,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "performance": {
+    "roc_auc": 0.9538073799130693,
+    "pr_auc": 0.8086557002737593,
+    "recall": 0.7535211267605634,
+    "precision": 0.9224137931034483,
+    "f1_score": 0.8294573643410852,
+    "training_time_seconds": 10.409357070922852
+  },
+  "business_metrics": {
+    "total_cost": 4565,
+    "missed_fraud_cost": 4340,
+    "false_alarm_cost": 225,
+    "frauds_detected": 107,
+    "false_positives": 9,
+    "false_negatives": 35,
+    "cost_per_fraud": 124,
+    "cost_per_false_positive": 25
+  },
+  "top_features": [
+    {
+      "feature": "V14",
+      "importance": 0.184
+    },
+    {
+      "feature": "V10",
+      "importance": 0.156
+    },
+    {
+      "feature": "V12",
+      "importance": 0.104
+    },
+    {
+      "feature": "V4",
+      "importance": 0.097
+    },
+    {
+      "feature": "V11",
+      "importance": 0.077
+    }
+  ],
+  "deployment_notes": [
+    "Model selected based on 92% cost reduction vs baseline",
+    "Best precision (92.2%) and PR-AUC (0.8087) among all models",
+    "Recommended for production due to minimal false positive rate",
+    "Monitor: False positive rate should stay <0.05%",
+    "Retrain: Monthly with rolling 90-day window"
+  ]
+}

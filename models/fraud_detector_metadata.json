@@ -1,0 +1,120 @@
+{
+  "model_type": "RandomForestClassifier",
+  "training_date": "2025-10-22 11:21:42",
+  "dataset_info": {
+    "source": "ULB Machine Learning Group (Kaggle)",
+    "time_period": "September 2013 (48 hours)",
+    "total_transactions": 283726,
+    "fraud_rate": 0.1727485630620034,
+    "train_size": 198608,
+    "test_size": 85118
+  },
+  "features": {
+    "count": 31,
+    "names": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V7",
+      "V8",
+      "V9",
+      "V10",
+      "V11",
+      "V12",
+      "V13",
+      "V14",
+      "V15",
+      "V16",
+      "V17",
+      "V18",
+      "V19",
+      "V20",
+      "V21",
+      "V22",
+      "V23",
+      "V24",
+      "V25",
+      "V26",
+      "V27",
+      "V28",
+      "Amount",
+      "Time_hours",
+      "Amount_Log"
+    ],
+    "pca_features": 28,
+    "engineered_features": [
+      "Amount_Log",
+      "Time_hours"
+    ]
+  },
+  "performance": {
+    "optimal_threshold": 0.13,
+    "default_threshold": 0.5,
+    "total_cost_optimized": 4075,
+    "precision": 0.75,
+    "recall": 0.823943661971831,
+    "f1_score": 0.785234899328859,
+    "roc_auc": 0.9538073799130693,
+    "pr_auc": 0.8086557002737593,
+    "true_positives": 117,
+    "false_positives": 39,
+    "false_negatives": 25,
+    "true_negatives": 84937
+  },
+  "business_rules": {
+    "cost_per_fraud": 124,
+    "cost_per_false_positive": 25,
+    "annual_savings_estimate": 9947892.5
+  },
+  "top_features_shap": [
+    {
+      "feature": "V15",
+      "mean_abs_shap": 0.07646201517783884
+    },
+    {
+      "feature": "V13",
+      "mean_abs_shap": 0.06860891132884502
+    },
+    {
+      "feature": "V11",
+      "mean_abs_shap": 0.06345412523207161
+    },
+    {
+      "feature": "V5",
+      "mean_abs_shap": 0.051351704223873175
+    },
+    {
+      "feature": "V4",
+      "mean_abs_shap": 0.044065649179394935
+    },
+    {
+      "feature": "V12",
+      "mean_abs_shap": 0.042079920659479186
+    },
+    {
+      "feature": "V18",
+      "mean_abs_shap": 0.03004059248476585
+    },
+    {
+      "feature": "V17",
+      "mean_abs_shap": 0.020576039375433872
+    },
+    {
+      "feature": "V8",
+      "mean_abs_shap": 0.012459968990945937
+    },
+    {
+      "feature": "V10",
+      "mean_abs_shap": 0.01226707255598017
+    }
+  ],
+  "monitoring_thresholds": {
+    "max_daily_cost": 2500,
+    "max_false_negative_rate": 0.25,
+    "max_false_positive_rate": 0.0005,
+    "retraining_frequency_days": 90
+  }
+}
