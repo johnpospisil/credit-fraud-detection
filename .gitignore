@@ -28,8 +28,10 @@ wheels/
 */.ipynb_checkpoints/*
 
 # Data files (too large for GitHub)
+data/
 data/*.csv
-models
+models/
+models/*
 
 # macOS
 .DS_Store
