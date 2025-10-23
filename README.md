@@ -14,7 +14,7 @@
 
 ---
 
-## � Table of Contents
+## Table of Contents
 
 - [Executive Summary](#executive-summary)
 - [Problem Statement](#problem-statement)
@@ -45,7 +45,7 @@ The solution incorporates advanced techniques including SMOTE oversampling, hype
 
 ---
 
-## � Problem Statement
+## Problem Statement
 
 Credit card fraud costs financial institutions billions annually. This project tackles the challenge of detecting fraudulent transactions in a severely imbalanced dataset where **only 0.172% of transactions are fraudulent** (492 out of 284,807).
 
@@ -88,7 +88,7 @@ Credit card fraud costs financial institutions billions annually. This project t
 
 ---
 
-## � Methodology
+## Methodology
 
 This project follows a systematic 10-stage machine learning pipeline:
 
