@@ -32,8 +32,6 @@ data/
 data/*.csv
 models/
 models/*
-images/
-images/*
 
 # macOS
 .DS_Store
